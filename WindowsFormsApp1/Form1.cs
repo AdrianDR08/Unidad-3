@@ -33,7 +33,10 @@ namespace WindowsFormsApp1
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            dataGridClientes.DataSource = clienteDAO.MostrarClientes();
+            ClienteDAO dao = new ClienteDAO();
+
+            dataGridClientes.DataSource = dao.MostrarClientes();
         }
     }
 }
+
