@@ -104,6 +104,12 @@ namespace WindowsFormsApp1
             FormProveedores proveedores = new FormProveedores();
             proveedores.Show();
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            FormProductos productos = new FormProductos();
+            productos.Show();
+        }
     }
 }
 

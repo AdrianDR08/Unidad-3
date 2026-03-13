@@ -151,9 +151,9 @@
             // dataGridProveedores
             // 
             this.dataGridProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridProveedores.Location = new System.Drawing.Point(402, 33);
+            this.dataGridProveedores.Location = new System.Drawing.Point(64, 176);
             this.dataGridProveedores.Name = "dataGridProveedores";
-            this.dataGridProveedores.Size = new System.Drawing.Size(386, 137);
+            this.dataGridProveedores.Size = new System.Drawing.Size(707, 180);
             this.dataGridProveedores.TabIndex = 12;
             // 
             // FormProveedores
