@@ -98,6 +98,12 @@ namespace WindowsFormsApp1
             FormCategorias form = new FormCategorias();
             form.Show();
         }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            FormProveedores proveedores = new FormProveedores();
+            proveedores.Show();
+        }
     }
 }
 

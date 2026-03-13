@@ -44,6 +44,7 @@
             this.btnMostrar = new System.Windows.Forms.Button();
             this.dataGridClientes = new System.Windows.Forms.DataGridView();
             this.btnCategorias = new System.Windows.Forms.Button();
+            this.btnProveedores = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -185,15 +186,26 @@
             this.btnCategorias.Name = "btnCategorias";
             this.btnCategorias.Size = new System.Drawing.Size(75, 23);
             this.btnCategorias.TabIndex = 15;
-            this.btnCategorias.Text = "abrir categorias";
+            this.btnCategorias.Text = " categorias";
             this.btnCategorias.UseVisualStyleBackColor = true;
             this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
+            // 
+            // btnProveedores
+            // 
+            this.btnProveedores.Location = new System.Drawing.Point(598, 246);
+            this.btnProveedores.Name = "btnProveedores";
+            this.btnProveedores.Size = new System.Drawing.Size(75, 23);
+            this.btnProveedores.TabIndex = 16;
+            this.btnProveedores.Text = "proveedores";
+            this.btnProveedores.UseVisualStyleBackColor = true;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnProveedores);
             this.Controls.Add(this.btnCategorias);
             this.Controls.Add(this.dataGridClientes);
             this.Controls.Add(this.btnMostrar);
@@ -211,7 +223,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -236,6 +248,7 @@
         private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.DataGridView dataGridClientes;
         private System.Windows.Forms.Button btnCategorias;
+        private System.Windows.Forms.Button btnProveedores;
     }
 }
 
