@@ -92,6 +92,12 @@ namespace WindowsFormsApp1
                 e.Handled = true;
             }
         }
+
+        private void btnCategorias_Click(object sender, EventArgs e)
+        {
+            FormCategorias form = new FormCategorias();
+            form.Show();
+        }
     }
 }
 
