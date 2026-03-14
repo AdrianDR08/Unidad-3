@@ -86,6 +86,7 @@
             this.txtIDProveedor.Name = "txtIDProveedor";
             this.txtIDProveedor.Size = new System.Drawing.Size(124, 20);
             this.txtIDProveedor.TabIndex = 4;
+            this.txtIDProveedor.TextChanged += new System.EventHandler(this.txtIDProveedor_TextChanged);
             // 
             // txtNombreProveedor
             // 

@@ -75,6 +75,7 @@
             this.txtIDCategoria.Name = "txtIDCategoria";
             this.txtIDCategoria.Size = new System.Drawing.Size(139, 20);
             this.txtIDCategoria.TabIndex = 3;
+            this.txtIDCategoria.TextChanged += new System.EventHandler(this.txtIDCategoria_TextChanged);
             // 
             // txtNombreCategoria
             // 

@@ -100,6 +100,7 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 5;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             this.txtID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtID_KeyPress);
             // 
             // txtNombre
