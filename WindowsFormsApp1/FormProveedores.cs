@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        // Botón Mostrar
+       
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             using (var db = new MIGRAMODE1())
@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
             MessageBox.Show("Proveedores mostrados correctamente.");
         }
 
-        // Botón Insertar
+        
         private void btnInsertar_Click(object sender, EventArgs e)
         {
             using (var db = new MIGRAMODE1())
@@ -52,7 +52,7 @@ namespace WindowsFormsApp1
             MessageBox.Show("Proveedor insertado correctamente.");
         }
 
-        // Botón Actualizar
+        
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             using (var db = new MIGRAMODE1())
@@ -73,7 +73,7 @@ namespace WindowsFormsApp1
             MessageBox.Show("Proveedor actualizado correctamente.");
         }
 
-        // Botón Eliminar
+        
         private void button4_Click(object sender, EventArgs e)
         {
             using (var db = new MIGRAMODE1())
@@ -91,7 +91,12 @@ namespace WindowsFormsApp1
             MessageBox.Show("Proveedor eliminado correctamente.");
         }
 
-        // Evento vacío para el Designer
+        
         private void txtIDProveedor_TextChanged(object sender, EventArgs e) { }
+
+        private void dataGridProveedores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

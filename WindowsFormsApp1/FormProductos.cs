@@ -11,22 +11,22 @@ namespace WindowsFormsApp1
         public FormProductos()
         {
             InitializeComponent();
-            CargarCategorias(); // Carga ComboBox al iniciar
-            MostrarProductos();  // Muestra productos al iniciar
+            CargarCategorias(); 
+            MostrarProductos(); 
         }
 
-        // Método para llenar ComboBox con Categorías
+        
         private void CargarCategorias()
         {
             using (var db = new MIGRAMODE1())
             {
                 comboCategorias.DataSource = db.Categorias.ToList();
-                comboCategorias.DisplayMember = "NombreCategoria"; // Cambia según tu modelo
+                comboCategorias.DisplayMember = "NombreCategoria"; 
                 comboCategorias.ValueMember = "CategoriaID";
             }
         }
 
-        // Mostrar todos los productos en DataGridView
+        
         private void MostrarProductos()
         {
             using (var db = new MIGRAMODE1())
@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
             {
                 Productos p = new Productos
                 {
-                    // ProductoID generalmente se autogenera, no es necesario asignarlo
+                    
                     NombreProducto = txtNombreProducto.Text,
                     Descripcion = txtDescripcion.Text,
                     Precio = decimal.Parse(txtPrecio.Text),
@@ -116,11 +116,11 @@ namespace WindowsFormsApp1
         }
         private void comboCategorias_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Puedes dejarlo vacío si no necesitas lógica
+            
         }
         private void dataGridProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Opcional: dejar vacío si no necesitas lógica
+           
         }
         private void dataGridProductos_CellClick(object sender, DataGridViewCellEventArgs e)
         {

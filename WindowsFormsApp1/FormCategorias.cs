@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        // Botón Mostrar
+        
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             using (var db = new MIGRAMODE1())
@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             MessageBox.Show("Categorías mostradas correctamente.");
         }
 
-        // Botón Insertar
+        
         private void btnInsertar_Click(object sender, EventArgs e)
         {
             using (var db = new MIGRAMODE1())
@@ -46,11 +46,11 @@ namespace WindowsFormsApp1
                 db.SaveChanges();
             }
 
-            btnMostrar_Click(sender, e); // refrescar DataGrid
+            btnMostrar_Click(sender, e); 
             MessageBox.Show("Categoría insertada correctamente.");
         }
 
-        // Botón Actualizar
+        
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             using (var db = new MIGRAMODE1())
@@ -66,11 +66,11 @@ namespace WindowsFormsApp1
                 }
             }
 
-            btnMostrar_Click(sender, e); // refrescar DataGrid
+            btnMostrar_Click(sender, e); 
             MessageBox.Show("Categoría actualizada correctamente.");
         }
 
-        // Botón Eliminar
+        
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             using (var db = new MIGRAMODE1())
@@ -84,11 +84,15 @@ namespace WindowsFormsApp1
                 }
             }
 
-            btnMostrar_Click(sender, e); // refrescar DataGrid
+            btnMostrar_Click(sender, e); 
             MessageBox.Show("Categoría eliminada correctamente.");
         }
-
-        // Evento vacío para el Designer
+        
         private void txtIDCategoria_TextChanged(object sender, EventArgs e) { }
+
+        private void dataGridCategorias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

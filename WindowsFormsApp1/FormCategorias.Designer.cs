@@ -138,6 +138,7 @@
             this.dataGridCategorias.Name = "dataGridCategorias";
             this.dataGridCategorias.Size = new System.Drawing.Size(482, 150);
             this.dataGridCategorias.TabIndex = 10;
+            this.dataGridCategorias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridCategorias_CellContentClick);
             // 
             // FormCategorias
             // 

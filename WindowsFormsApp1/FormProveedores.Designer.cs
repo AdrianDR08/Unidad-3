@@ -156,6 +156,7 @@
             this.dataGridProveedores.Name = "dataGridProveedores";
             this.dataGridProveedores.Size = new System.Drawing.Size(707, 180);
             this.dataGridProveedores.TabIndex = 12;
+            this.dataGridProveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridProveedores_CellContentClick);
             // 
             // FormProveedores
             // 

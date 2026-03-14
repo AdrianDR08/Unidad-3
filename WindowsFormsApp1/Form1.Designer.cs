@@ -178,6 +178,7 @@
             this.dataGridClientes.Name = "dataGridClientes";
             this.dataGridClientes.Size = new System.Drawing.Size(514, 157);
             this.dataGridClientes.TabIndex = 14;
+            this.dataGridClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClientes_CellContentClick);
             // 
             // Form1
             // 
