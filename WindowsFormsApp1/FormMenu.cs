@@ -47,5 +47,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void btnProveedores_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
