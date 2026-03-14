@@ -93,23 +93,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void btnCategorias_Click(object sender, EventArgs e)
-        {
-            FormCategorias form = new FormCategorias();
-            form.Show();
-        }
-
-        private void btnProveedores_Click(object sender, EventArgs e)
-        {
-            FormProveedores proveedores = new FormProveedores();
-            proveedores.Show();
-        }
-
-        private void btnProductos_Click(object sender, EventArgs e)
-        {
-            FormProductos productos = new FormProductos();
-            productos.Show();
-        }
     }
 }
 
